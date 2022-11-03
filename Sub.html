@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공부서점 | 구매 페이지</title>
+    <script src="https://kit.fontawesome.com/c6f3140d93.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="js/Sub.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Sub.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="scrollTop">
+            <i class="fa-solid fa-arrow-up-long"></i>
+        </div>
+        <div class="globalWrap">
+            <div class="globalNav">
+
+                <h2><a href=""></a></h2>
+                <div class="subNav">
+                    <div class="subOn">공부서점 분철최저가</div>
+                    <div>대입·수능(8)</div>
+                    <div>어학·회화·유학(13)</div>
+                    <div>대학생·취업</div>
+                    <div>자격증(2)</div>
+                    <div>공무원(23)</div>
+                    <div>전문직(9)</div>
+                    <div>뷰티(2)</div>
+                </div>
+            </div>
+            <div class="globalOpen">
+            </div>
+        </div>
+        
+        <div id="headerGroup">
+            <div id="navGroup">
+                <div class="navList">
+                    <ul>
+                        <li>로그인</li>
+                        <li>회원가입</li>
+                        <li>장바구니</li>
+                        <li>주문·배송내역</li>
+                        <li>고객섬김센터</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="header">
+                <div class="innerHead">
+                    <div class="inputLogo"></div>
+                    <form>
+                        <input type="text">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+                <div class="bottomHead">
+                    <div class="headCategory">
+                        전체분야
+                    </div>
+                    <div class="headEvent">
+                        <div>
+                            <div class="leftImg">
+                            </div>
+                            <div class="rightText weightOn">
+                                <p>
+                                    2023 시작은
+                                    <br>
+                                    선재국어와 함께
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="leftImg"></div>
+                            <div class="rightText">
+                                <p>
+                                    2023 공단기
+                                    <br>
+                                    기본서 출간 기념
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="leftImg"></div>
+                            <div class="rightText">
+                                <p>
+                                    2023 이동기 영어
+                                    <br>
+                                    출간 이벤트
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="leftImg"></div>
+                            <div class="rightText">
+                                <p>
+                                    데이터가 증명하는
+                                    <br>
+                                    공시생 가이드
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="leftImg"></div>
+                            <div class="rightText">
+                                <p>
+                                    공부서점 베스트셀러
+                                    <br>
+                                    분철 무료
+                                </p>
+                            </div>
+                        </div>
+                        <div class="controlBtn">
+                            <div class="left">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </div>
+                            <div class="right">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blank"></div>
+        <div class="detailPage">
+            <div class="inner">
+                <div class="leftBookInfo">
+                    <div class="bookImg"></div>
+                    <div class="bookText">
+                        <p>고양이 시리즈</p>
+                        <span ></span>
+                        <p>1</p>
+                    </div>
+                </div>
+                <div class="rightPrice">
+                    <h3>행성 1~2 세트 (전2권)</h3>
+                    <span>고양이 시리즈</span>
+                    <div>
+                        <div>베르나르 베르베르 지음</div>
+                        <div>전미연 옮김</div>
+                        <div>열린책들 펴냄</div>
+                        <div>출간일: 2022-05-30</div>
+                        <div>양장본</div>
+                    </div>
+                    <div>
+                        <div>
+                            <h4>분철 신청</h4>
+                        </div>
+                        <div class="rightText">
+                            <div>
+                                <span>분철 신청 불가 상품</span>
+                            </div>
+                            <p>* 양장본, 스프링, 지퍼형태, CD포함 도서/규격에 맞지 않는 도서(최소 128x188 최대 235x310mm) 또는 문구 상품은 분철 서비스가 불가 합니다.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h4>구매혜택</h4>
+                        </div>
+                        <div class="rightText">
+                            <span>공부서점 추천</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h4>구매수량</h4>
+                        </div>
+                        <div class="rightText">
+                            <div class="numBtn">
+                                <div class="numbButton">
+                                    <input type="button"
+                                        onclick='count("plus")'
+                                        value='+'/>
+                                    <span class="upDownNum" id="upDownNum">1</span>
+                                    <input type="button"
+                                        onclick='count("minus")'
+                                        value='-'/>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <span>
+                                    <b>33,600</b>
+                                </span>
+                                <strong class="total">
+                                    <span>합계</span>
+                                    30,240원
+                                </strong>
+                                <p class="saving">
+                                    <span class="badgesRed">적립</span>
+                                    적립금 1,680원
+                                    <span class="discount">(5%)</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <span>장바구니</span>
+                            </div>
+                            <div>
+                                <span>바로구매</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <table>
+                            <colgroup>
+                                <col width="80px">
+                                <col width="auto">
+                            </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>적립금</th>
+                                        <td>1,680원</td>
+                                    </tr>
+                                    <tr>
+                                        <th>혜택</th>
+                                        <td>공부서점 회원 최대 16,500원 혜택</td>
+                                    </tr>
+                                    <tr>
+                                        <th>참고사항</th>
+                                        <td>해외배송가능
+                                            <br>
+                                            공부서점에서 구성한 상품으로 낱권 반품이 불가합니다.</td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="addOn">
+                <div class="bgOn">
+                    <span>함께 구매한 애드온</span>
+                </div>
+                <div>
+                    <span>많이 구매한 애드온</span>
+                </div>
+            </div>
+            <div class="shop">
+                <div class="shopInner">
+                    <div class="shopLeftText">
+                        <div class="leftUp">
+                            <p>
+                                이 책을
+                                <br>
+                                구입하신 분들이
+                                <br>
+                                함께 구매한 애드온
+                            </p>
+                        </div>
+                        <div class="leftDown">
+                            <label for="">
+                                <input type="checkbox" id="addonAllClick">
+                                전체 상품 선택
+                            </label>
+                            <div>
+                                <i class="fa-solid fa-heart"></i>
+                                <span>보관함</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>장바구니</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shopRightEle">
+                        <div>
+                            <input type="checkbox">
+                            <div class="imageText"></div>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <div class="imageText"></div>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <div class="imageText"></div>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <div class="imageText"></div>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <div class="imageText"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="serise">
+                <div class="seriseInner">
+                    <div class="seriseLeftText">
+                        <div class="leftUp2">
+                            <p>
+                                시리즈 도서
+                            </p>
+                            <div>
+                                <span>신간 알림 신청</span>
+                            </div>
+                        </div>
+                        <div class="leftDown">
+                            <label for="">
+                                <input type="checkbox" id="addonAllClick2">
+                                전체 상품 선택
+                            </label>
+                            <div>
+                                <i class="fa-solid fa-heart"></i>
+                                <span>보관함</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>장바구니</span>
+                            </div>
+                            <div>
+                                <span>바로구매</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seriseRightEle">
+                        <div>
+                            <input type="checkbox">
+                            <div class="imageText"></div>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <div class="imageText"></div>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <div class="imageText"></div>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <div class="imageText"></div>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <div class="imageText"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promotion">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="bookIntroduce">
+                <div class="upIntroOuter">
+                    <div class="upIntroInner">
+                        <div class="upCategory">
+                            <div class="cateBgOn">
+                                <span>책소개</span>
+                            </div>
+                            <div>
+                                <span>리뷰(1건)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="downIntro">
+                    <div class="mainLeftText">
+                        <h4>책 소개</h4>
+                        <b>이 행성의 운명을 건 최후의 결전이 시작된다!
+                            <br>
+                            전 세계 2천3백만 부, 한국어판 누계 3천 쇄 돌파 작가
+                            <br>
+                            베르나르 베르베르 신작 장편소설</b>
+                        <p class="contents">전쟁과 테러, 감염병 때문에 인구가 8분의 1로 줄어들고 황폐해진 세계. 시스템이 마비된 도시는 쓰레기와 쥐들로 뒤덮였다. 주인공 고양이 바스테트는 쥐들이 없는 세상을 찾아 '마지막 희망'호를 타고 파리를 떠나 뉴욕으로, 신세계로 향한다. 그러나 뉴욕에 도착한 바스테트 일행을 맞이한 것은 알 카포네라는 우두머리가 이끄는 쥐 군단의 공격. 겨우 목숨을 부지한 바스테트의 눈에 고층 빌딩 꼭대기에서 반짝이는 불빛이 보이고, 드론 한 대가 날아온다. 놀랍게도 뉴욕에는 약 4만 명의 인간이 쥐를 피해 2백여 개의 고층 빌딩에 숨어 살고 있었다. 그리고 프리덤 타워에는 102개 인간 집단을 대표하는 총회가 존재한다. 총회에서는 쥐를 없애기 위해 핵폭탄을 사용하자는 강경파가 대두하며 갈등이 심해진다. 바스테트는 103번째 대표 자격을 요구하지만 인간들은 고양이의 의견이라며 무시할 뿐이다. 시시각각 다가오는 쥐 군단의 위협, 무작정 핵폭탄을 쏘려는 인간들, 로봇 고양이 카츠의 등장…… 과연 바스테트는 상상력을 동원해 위기를 돌파하고 이 행성의 운명을 바꿀 수 있을까?</p>
+                        <div class="parentDiv">
+                            <div class="mask"></div>
+                            <iframe src="https://www.youtube.com/embed/gKup7i8GB9E" frameborder="0" width="747" height="450"></iframe>
+                            <div class="slideBtn">
+                                <span>상품 내용 모두보기</span>
+                            </div>
+                        </div>
+                        <div class="slideToggle">
+                            <p>
+                                <img src="https://s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/Libro_DEV/Book_Detail/978893292236201.jpg" alt="">
+                            </p>
+                            <h4>
+                                저자소개
+                            </h4>
+                            <h6>
+                                지음 : 베르나르 베르베르
+                            </h6>
+                            <p>
+                                프랑스에서보다 한국에서 더 많은 인기를 얻고 있는 작가로도 알려져 있기도 하며, 톨스토이, 셰익스피어, 헤르만 헤세 등과 함께 한국인이 가장 좋아하는 외국 작가로 선정된 바 있는 소설가이다. 베르나르 베르베르는 1961년 프랑스 툴루즈에서 태어났다. 「별들의 전쟁」세대에 속하기도 하는 그는 고등학교 때는 만화와 시나리오에 탐닉하면서 『만화 신문』을 발행하였고, 이후 올더스 헉슬리와 H.G. 웰즈를 사숙하면서 소설과 과학을 익혔다.
+                            </p>
+                            <p>
+                                1979년 툴루주 제1대학에 입학하여 법학을 전공하고 국립 언론 학교에서 저널리즘을 공부했다. 대학 졸업 후에는 『르 누벨 옵세르바퇴르』에서 저널리스트로 활동하면서 과학 잡지에 개미에 관한 평론을 발표해 오다 드디어 1991년 1백 20번에 가까운 개작을 거친 『개미(Les Fourmis)』를 발표, 전세계 독자들을 사로잡으며 단숨에 주목받는 대작가로 떠올랐다.
+                            </p>
+                            <p>
+                                『개미』는 베르베르가 개미를 관찰하기 시작한 열두 살 무렵부터 시작된 소설로 무려 20여 년의 연구와 관찰을 바탕으로 만들어진 작품이다. 작가는 개미에 관한 소설을 쓰기 위해 12년 동안 컴퓨터와 씨름하면서 수없이 고쳐썼다. 그는 직접 집안에 개미집을 들여다 놓고 개미를 기르며 그들의 생태를 관찰한 것은 물론이고, 아프리카 마냥개미를 탐구하러 갔다가 개미떼의 공격을 받고 죽을 고비를 넘기기도 했다.
+                            </p>
+                            <p>
+                                베르나르는 인간 중심의 세계관에서 벗어나 전혀 새로운 눈높이, 예를 들면 개미의 눈높이에서 바라본 세상을 바라보도록 함으로써 현실을 새로운 각도에서 살펴볼 수 있게 한다. 300만 년 밖에 되지 않는 인간의 오만함을 1억만년이 넘는 시간동안 살아남아온 개미들의 눈에 빗대 경고하고 있다.
+                            </p>
+                            <p>
+                                베르나르 베르베르가 열네 살 때부터 쓰기 시작한 거대한 잡동사니의 창고이면서 그의 보물 상자이기도 한『상대적이며 절대적인 지식의 백과사전』이라는 책은 개미들의 문명에서 영감을 받고 만들어진 것으로, 박물학과 형이상학, 공학과 마술, 수학과 신비 신학, 현대의 서사시와 고대의 의례가 어우러진 독특한 작품 형식을 선보인다.
+                            </p>
+    
+                            <h6>
+                                옮김 : 전미연
+                            </h6>
+    
+                            <p>서울대학교 불어불문학과와 한국외국어대학교 통번역대학원 한불과를 졸업했다. 파리 제3대학 통번역대학원(ESIT) 번역 과정과 오타와 통번역대학원(STI) 번역학 박사 과정을 마쳤다. 현재 전문 번역가로 활동하며 한국외국어대학교 통번역대학원 겸임 교수로 재직 중이다. 옮긴 책으로는 베르나르 베르베르의 『고양이』, 『잠』, 『파피용』, 『제3인류』(공역), 『만화 타나토노트』, 엠마뉘엘 카레르의 『리모노프』, 『나 아닌 다른 삶』, 『콧수염』, 『겨울 아이』, 카롤 마르티네즈의 『꿰맨 심장』, 아멜리 노통브의 『두려움과 떨림』, 『배고픔의 자서전』, 『이토록 아름다운 세 살』, 기욤 뮈소의 『당신, 거기 있어 줄래요?』, 『사랑하기 때문에』, 『그 후에』, 『천사의 부름』, 『종이 여자』, 발렝탕 뮈소의 『완벽한 계획』, 다비드 카라의 『새벽의 흔적』, 로맹 사르두의 『최후의 알리바이』, 『크리스마스 1초 전』, 『크리스마스를 구해 줘』, 알렉시 제니외의 『22세기 세계』(공역) 등이 있다. (작은 철학자 시리즈)를 비롯한 어린이책도 여러 권 번역했다. </p>
+    
+    
+                            <h4>
+                                출판사 서평
+                            </h4>
+                            
+                            <h6>지구의 주인은 누구인가 ― 인간? 고양이? 쥐?</h6>
+    
+                            <p>
+                                『행성』은 독립적으로 읽어도 전혀 지장이 없는 작품이지만 본래 『고양이』에서 출발한 이야기다. 『고양이』에서 시작해 『문명』으로 이어진 모험은 『행성』에서 대단원을 맞는다.
+                                베르베르는 개미나 고양이 같은 동물, 신이나 천사 같은 초월적 존재를 내세워 새로운 시각으로 인간 세상을 그려 왔다. 인간은 조연에 불과하고 주연은 모두 동물이 차지한 이 3부작에서 작가는 〈이 세상은 인간의 것만이 아니다〉라는 것을 끊임없이 강조한다.
+                                『행성』은 앞서 발표한 두 소설에 비해 인간의 비중이 크게 늘었다. 정치인, 군인, 과학자, 종교인 등 다양한 인간 캐릭터들이 등장한다. 살아남은 인류의 총회를 이끄는 의장 힐러리 클린턴, 로봇 공장 보스턴 다이내믹스의 창립자 마크 레이버트 등 실존 인물에서 따온 캐릭터들도 재미를 더한다.
+                                이러한 인간 캐릭터들은 때로는 동물 캐릭터들과 비교되어 현재 인간 사회의 문제점이 무엇인지를 보여 주기도 하고, 그렇다면 앞으로 어떻게 해야 할 것인가 해결책을 생각해 보게 하기도 한다. 특히 핵폭탄으로 대변되는 인간의 호전성, 소통보다는 무력으로 갈등을 해결하려는 인간 캐릭터들의 모습은 현재를 돌아보게 만든다. 『고양이』와 『문명』이 작품 발표 이후 벌어진 코로나 바이러스 사태와 연결되는 것처럼, 『행성』을 읽다 보면 현재 우크라이나에서 벌어지고 있는 참혹한 전쟁이 떠오를지도 모른다.
+                            </p>
+    
+                            <h6>책 속에 수록된 『상대적이며 절대적인 지식의 백과사전』에도 주목!</h6>
+                            
+                            <p>
+                                베르베르의 팬이라면 당연히 그 이름을 알고 있을 『상대적이며 절대적인 지식의 백과사전』. 이번 작품에도 역시 백과사전이 등장한다. 『개미』에 등장했던 에드몽 웰즈의 후손인 로망 웰즈는 기존의 『상대적이며 절대적인 지식의 백과사전』에 브리태니커 백과사전, 위키백과 등의 데이터를 추가해 〈확장판〉을 만든 것으로 나온다. 베르베르 작품 세계와 수십 년 동안 함께 해온 웰즈 가문의 활약과, 백과사전의 〈확장판〉에 주목하며 소설을 읽는 것도 또 하나의 재미일 것이다.
+                            </p>
+                            <h4>
+                                관련 분야
+                            </h4>
+                            <p class="marginValue">
+                                홈  >  국내도서  >  문학  >  장르소설  >  SF
+                                <br>
+                                홈  >  국내도서  >  문학  >  소설/시  >  외국소설  >  프랑스소설
+                            </p>
+                            <div class="upSlide">
+                                <span>상품 내용 접기</span>
+                            </div>
+
+                            <p class="lastText">
+                                이 책의 어떤 점이 가장 도움이 되었나요?
+                                <br>
+                                회원님의 소중한 생각을 나눌 수 있는 리뷰를 작성해 주세요!
+                            </p>
+                            <div class="review">
+                                <span>리뷰 쓰고 혜택 받기</span>
+                            </div>
+                        </div>
+                        <div class="reviewContainer">
+                            <div class="reviewUpTitle">
+                                <p><b>리뷰</b> 총 1권</p>
+                            </div>
+                            <div class="reviewPage">
+                                <div class="reviewUp">
+                                    <p><b>[일반리뷰] 넘 재미있습니다~!</b></p>
+                                    <div class="customBox">
+                                        <span>wg0***</span>
+                                        <span></span>
+                                        <span>2022-06-01</span>
+                                    </div>
+                                    <img src="//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/reviewFileUpload/2022/06/0100023391397_9615682.jpeg" alt="">
+                                    <p>강추드립니다. 너무 좋아요~!</p>
+                                    <div>
+                                        <span>공감해요</span>
+                                    </div>
+                                </div>
+                                <div class="reviewDown">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightStickyText">
+                        <div class="rightUpBook">
+                            <div class="UpBook">
+                                <div>
+                                    <div></div>
+                                    <div>
+                                        <div>
+                                            <p>행성 1~2 세트 (전2권)</p>
+                                        </div>
+                                        <div class="numbButton">
+                                            <input type="button"
+                                                onclick='count("plus")'
+                                                value='+'/>
+                                            <span class="upDownNum" id="upDownNum2">1</span>
+                                            <input type="button"
+                                                onclick='count("minus")'
+                                                value='-'/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span>분철 신청 불가 상품</span>
+                                    </div>
+                                    <p>* 양장본, 스프링, 지퍼형태, CD포함 도서/규격에 맞지 않는 도서(최소 128x188 최대 235x310mm) 또는 문구 상품은 분철 서비스가 불가 합니다.</p>
+                                </div>
+                                <div>
+                                    <p>합계</p>
+                                    <h3>30,240원</h3>
+                                </div>
+                            </div>
+                            <div class="downPrice">
+                                <div>
+                                    <span>장바구니</span>
+                                </div>
+                                <div>
+                                    <span>바로구매</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rightDownInfo">
+                            <div>
+                                <div class="font">
+                                    <i class="fa-solid fa-book"></i>
+                                </div>
+                                <div class="text">
+                                    <span>책 목차</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="font">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </div>
+                                <div class="text">
+                                    <span>품목정보 </span>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="font">
+                                    <i class="fa-solid fa-box"></i>
+                                </div>
+                                <div class="text">
+                                    <span>배송/교환/반품 안내</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="footer">
+            <div class="innerFoot">
+                <div class="footLogo">
+
+                </div>
+                <div class="footTxt">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

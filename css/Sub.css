@@ -1,0 +1,1273 @@
+#wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#wrap .scrollTop {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#wrap .scrollTop i {
+  color: white;
+  font-size: 25px;
+}
+#wrap .toggleOpen {
+  left: 0;
+}
+#wrap .globalWrap {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: -160px;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 0.5s;
+}
+#wrap .globalWrap .globalNav {
+  width: 160px;
+  height: 100vh;
+  box-shadow: 0px 0px 10px;
+  top: 0;
+  background-color: white;
+}
+#wrap .globalWrap .globalNav h2 {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  border-bottom: 1px solid #Eee;
+}
+#wrap .globalWrap .globalNav a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  background-image: url(../img/logo.png);
+  background-size: 35%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#wrap .globalWrap .globalNav .subNav {
+  width: 100%;
+  height: auto;
+}
+#wrap .globalWrap .globalNav .subNav div {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #Eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+#wrap .globalWrap .globalNav .subNav .subOn {
+  background-color: purple;
+  color: orange;
+}
+#wrap .globalWrap .globalOpen {
+  margin-top: 150px;
+  width: 70px;
+  height: 70px;
+  background-image: url(../img/lnb_icon_open.png);
+  cursor: pointer;
+  transition: all 0.52s;
+}
+#wrap #headerGroup {
+  width: 100%;
+  height: 250px;
+  border-bottom: 1px solid #eee;
+}
+#wrap #headerGroup #navGroup {
+  width: 100%;
+  height: 52px;
+}
+#wrap #headerGroup #navGroup .navList {
+  width: 98%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#wrap #headerGroup #navGroup .navList li {
+  float: left;
+  margin-right: 20px;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+}
+#wrap #headerGroup #navGroup .navList li li:before {
+  content: "";
+}
+#wrap #headerGroup #header {
+  width: 100%;
+  height: 193px;
+}
+#wrap #headerGroup #header .innerHead {
+  width: 1130px;
+  height: 55%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+}
+#wrap #headerGroup #header .innerHead .inputLogo {
+  width: 180px;
+  height: 35px;
+  margin-bottom: 10px;
+  background-image: url(../img/inputLogo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#wrap #headerGroup #header .innerHead form {
+  position: relative;
+}
+#wrap #headerGroup #header .innerHead form input {
+  width: 540px;
+  height: 50px;
+  color: #666;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-left: 30px;
+  content: "\f002";
+}
+#wrap #headerGroup #header .innerHead form i {
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+#wrap #headerGroup #header .bottomHead {
+  width: 1130px;
+  height: 47%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+}
+#wrap #headerGroup #header .bottomHead .headCategory {
+  width: 180px;
+  height: 50%;
+  background-color: #333;
+  color: White;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #headerGroup #header .bottomHead .headEvent {
+  width: 910px;
+  height: 50%;
+  margin-left: 35px;
+  display: flex;
+}
+#wrap #headerGroup #header .bottomHead .headEvent > div {
+  width: 20%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+#wrap #headerGroup #header .bottomHead .headEvent > div .leftImg {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+#wrap #headerGroup #header .bottomHead .headEvent > div .rightText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+  font-size: 11px;
+}
+#wrap #headerGroup #header .bottomHead .headEvent > div .weightOn {
+  font-weight: bold;
+}
+#wrap #headerGroup #header .bottomHead .headEvent > div:nth-of-type(1) .leftImg {
+  background-image: url(//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2022/0720/b63Ht.png);
+}
+#wrap #headerGroup #header .bottomHead .headEvent > div:nth-of-type(2) .leftImg {
+  background-image: url(//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2022/0720/TFPuy.png);
+}
+#wrap #headerGroup #header .bottomHead .headEvent > div:nth-of-type(3) .leftImg {
+  background-image: url(//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2022/0711/6BEbd.png);
+}
+#wrap #headerGroup #header .bottomHead .headEvent > div:nth-of-type(4) .leftImg {
+  background-image: url(//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2022/0707/j80K0.png);
+}
+#wrap #headerGroup #header .bottomHead .headEvent > div:nth-of-type(5) .leftImg {
+  background-image: url(//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/upload/2022/0608/KhUNz.png);
+}
+#wrap #headerGroup #header .bottomHead .headEvent .controlBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap #headerGroup #header .bottomHead .headEvent .controlBtn div {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eee;
+}
+#wrap .blank {
+  width: 1130px;
+  height: 30px;
+  margin: 0 auto;
+}
+#wrap .detailPage {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+#wrap .detailPage .inner {
+  width: 1130px;
+  height: 730px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap .detailPage .inner .leftBookInfo {
+  width: 482px;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#wrap .detailPage .inner .leftBookInfo .bookImg {
+  width: 458px;
+  height: 443px;
+  border-radius: 5px;
+  filter: drop-shadow(2px 4px 8px rgba(134, 134, 134, 0.25));
+  background-image: url(../img/cat.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#wrap .detailPage .inner .leftBookInfo .bookText {
+  height: 110px;
+  width: 80%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#wrap .detailPage .inner .leftBookInfo .bookText p {
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+}
+#wrap .detailPage .inner .leftBookInfo .bookText span {
+  display: inline-block;
+  width: 100%;
+  height: 32px;
+  overflow: hidden;
+  background: url(../img/star.png);
+  background-size: 50%;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  line-height: 0;
+  vertical-align: center;
+  transform: translateX(25%);
+}
+#wrap .detailPage .inner .rightPrice {
+  width: 577px;
+  height: 100%;
+}
+#wrap .detailPage .inner .rightPrice h3 {
+  width: 100%;
+  height: 28px;
+  margin-bottom: 10px;
+}
+#wrap .detailPage .inner .rightPrice > span {
+  display: block;
+  height: 20px;
+  margin-bottom: 25px;
+  font-size: 13px;
+  color: #888;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(1) {
+  width: 100%;
+  height: 36px;
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(1) div {
+  font-size: 12px;
+  line-height: 28px;
+  padding: 0px 12px;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(1) div:nth-of-type(1) {
+  width: auto;
+  height: 26px;
+  border-radius: 50px;
+  background-color: #EBEDF7;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(1) div:nth-of-type(2) {
+  width: auto;
+  height: 26px;
+  border-radius: 50px;
+  background-color: #EBEDF7;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(1) div:nth-of-type(3) {
+  width: auto;
+  height: 26px;
+  border-radius: 50px;
+  background-color: #EBEDF7;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(1) div:nth-of-type(4) {
+  width: auto;
+  height: 26px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(1) div:nth-of-type(5) {
+  width: auto;
+  height: 26px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(2) {
+  width: 100%;
+  height: 86px;
+  padding: 30px 0px;
+  border-top: 1px solid #eee;
+  display: flex;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(2) div:nth-of-type(1) {
+  width: 120px;
+  height: 100%;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(2) > .rightText {
+  width: 458px;
+  height: 100%;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(2) > .rightText div:nth-of-type(1) {
+  width: 456px;
+  height: 38px;
+  padding-left: 15px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(2) > .rightText div:nth-of-type(1) span {
+  font-size: 12px;
+  color: #777;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(2) > .rightText p {
+  width: 446px;
+  height: 34px;
+  padding: 10px;
+  font-size: 11px;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(3) {
+  width: 100%;
+  height: 27px;
+  padding: 30px 0px;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(3) div:nth-of-type(1) {
+  width: 120px;
+  height: 100%;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(3) > div:nth-of-type(2) {
+  width: 80px;
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(3) > div:nth-of-type(2) span {
+  font-size: 12px;
+  color: #777;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) {
+  width: 100%;
+  height: 184px;
+  padding: 30px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-top: 1px solid #eee;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(1) {
+  width: 120px;
+  height: 27px;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(2) {
+  width: 456px;
+  height: 134px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(2) div:nth-of-type(1) {
+  width: 50%;
+  height: 100%;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(2) div:nth-of-type(1) .numbButton {
+  width: 60%;
+  height: 30px;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(2) div:nth-of-type(1) .numbButton a {
+  display: inline-block;
+  height: 100%;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(2) div:nth-of-type(1) .numbButton input {
+  width: 20%;
+  height: 100%;
+  border: 1px solid #eee;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(2) div:nth-of-type(2) {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(2) div:nth-of-type(2) > span {
+  display: block;
+  text-decoration: line-through;
+  color: #999;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(2) div:nth-of-type(2) > span b {
+  color: #999;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(2) div:nth-of-type(2) .total {
+  font-size: 35px;
+  margin-bottom: 4px;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(2) div:nth-of-type(2) .total span {
+  font-size: 14px;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(2) div:nth-of-type(2) .saving {
+  font-size: 12px;
+  font-weight: bold;
+  color: #eb6a62;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(2) div:nth-of-type(2) .saving .badgesRed {
+  display: inline-block;
+  background-color: #eb6a62;
+  border-radius: 20px;
+  line-height: 18px;
+  color: #fff;
+  padding: 0 8px;
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 12px;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(2) div:nth-of-type(2) .saving .discount {
+  margin-left: 8px;
+  font-weight: normal;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(3) {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(3) div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(3) div span {
+  font-weight: bold;
+  font-size: 16px;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(3) div:nth-of-type(1) {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(3) div:nth-of-type(2) {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  background-color: #464B6F;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(4) div:nth-of-type(3) div:nth-of-type(2) span {
+  color: white;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(5) {
+  width: 525px;
+  height: 92px;
+  padding: 10px 25px;
+  border: 1px solid #eee;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(5) table {
+  display: table;
+  border-spacing: 2px;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(5) table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(5) table tr {
+  display: table-row;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(5) table th, #wrap .detailPage .inner .rightPrice > div:nth-of-type(5) table td {
+  text-align: left;
+  font-size: 12px;
+  font-weight: normal;
+  color: #777;
+}
+#wrap .detailPage .inner .rightPrice > div:nth-of-type(5) table td {
+  line-height: 20px;
+}
+#wrap .detailPage .addOn {
+  width: 1130px;
+  height: 61px;
+  margin: 0 auto;
+  display: flex;
+}
+#wrap .detailPage .addOn div {
+  width: 214px;
+  height: 100%;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-top: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#wrap .detailPage .addOn div span {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+}
+#wrap .detailPage .addOn .bgOn {
+  background-color: #FCFCFB;
+}
+#wrap .detailPage .shop {
+  width: 100%;
+  height: 325px;
+  background-color: #FCFCFB;
+}
+#wrap .detailPage .shop .shopInner {
+  width: 1130px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#wrap .detailPage .shop .shopInner .shopLeftText {
+  width: 233px;
+  height: 272px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#wrap .detailPage .shop .shopInner .shopLeftText .leftUp {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+#wrap .detailPage .shop .shopInner .shopLeftText .leftUp p {
+  font-weight: bold;
+  font-size: 18px;
+}
+#wrap .detailPage .shop .shopInner .shopLeftText .leftDown {
+  width: 100%;
+  height: 82px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .detailPage .shop .shopInner .shopLeftText .leftDown label {
+  width: 100%;
+  font-size: 12px;
+}
+#wrap .detailPage .shop .shopInner .shopLeftText .leftDown div {
+  width: 49%;
+  height: 44px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#wrap .detailPage .shop .shopInner .shopLeftText .leftDown div span {
+  margin-left: 10px;
+  display: block;
+  font-size: 13px;
+}
+#wrap .detailPage .shop .shopInner .shopRightEle {
+  width: 76.5%;
+  height: 272px;
+  border-left: 1px solid #eee;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#wrap .detailPage .shop .shopInner .shopRightEle > div {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 171px;
+  height: 271px;
+}
+#wrap .detailPage .shop .shopInner .shopRightEle > div div {
+  width: 121px;
+  height: 100%;
+  text-align: center;
+}
+#wrap .detailPage .shop .shopInner .shopRightEle > div div h4 {
+  margin-top: 10px;
+  font-size: 15px;
+}
+#wrap .detailPage .shop .shopInner .shopRightEle > div div p {
+  margin-top: 20px;
+}
+#wrap .detailPage .serise {
+  width: 100%;
+  height: 325px;
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+#wrap .detailPage .serise .seriseInner {
+  width: 1130px;
+  height: 100%;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#wrap .detailPage .serise .seriseInner .seriseLeftText {
+  width: 233px;
+  height: 272px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#wrap .detailPage .serise .seriseInner .seriseLeftText .leftUp2 {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+#wrap .detailPage .serise .seriseInner .seriseLeftText .leftUp2 p {
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#wrap .detailPage .serise .seriseInner .seriseLeftText .leftUp2 div {
+  border-radius: 30px;
+  background: #FFFFFF;
+  color: #464B6F;
+  font-size: 10px;
+  line-height: 28px;
+  padding: 0 10px;
+  height: 28px;
+  text-align: center;
+  border: 1px solid #EFEFEF;
+  display: inline-block;
+}
+#wrap .detailPage .serise .seriseInner .seriseLeftText .leftUp2 div span {
+  font-size: 8px;
+}
+#wrap .detailPage .serise .seriseInner .seriseLeftText .leftDown {
+  width: 100%;
+  height: 132px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-end;
+}
+#wrap .detailPage .serise .seriseInner .seriseLeftText .leftDown label {
+  width: 100%;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+#wrap .detailPage .serise .seriseInner .seriseLeftText .leftDown div:not(:last-child) {
+  width: 49%;
+  height: 44px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#wrap .detailPage .serise .seriseInner .seriseLeftText .leftDown div:not(:last-child) span {
+  margin-left: 10px;
+  display: block;
+  font-size: 13px;
+}
+#wrap .detailPage .serise .seriseInner .seriseLeftText .leftDown div:last-child {
+  width: 100%;
+  border: 1px solid #777;
+  background-color: #464B6F;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#wrap .detailPage .serise .seriseInner .seriseLeftText .leftDown div:last-child span {
+  display: block;
+  line-height: 48px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+#wrap .detailPage .serise .seriseInner .seriseRightEle {
+  width: 76.5%;
+  height: 272px;
+  border-left: 1px solid #eee;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#wrap .detailPage .serise .seriseInner .seriseRightEle > div {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 171px;
+  height: 271px;
+}
+#wrap .detailPage .serise .seriseInner .seriseRightEle > div div {
+  width: 121px;
+  height: 100%;
+  text-align: center;
+}
+#wrap .detailPage .serise .seriseInner .seriseRightEle > div div h4 {
+  margin-top: 10px;
+}
+#wrap .detailPage .serise .seriseInner .seriseRightEle > div div p {
+  margin-top: 20px;
+}
+#wrap .detailPage .promotion {
+  width: 1130px;
+  height: 98px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap .detailPage .promotion div {
+  width: 551px;
+  height: 100%;
+  border: 1px solid #eee;
+}
+#wrap .detailPage .promotion div:nth-of-type(1) {
+  background-image: url(../img/Sub-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#wrap .detailPage .promotion div:nth-of-type(2) {
+  background-image: url(../img/Sub-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#wrap .detailPage .bookIntroduce {
+  margin-top: 100px;
+  width: 100%;
+}
+#wrap .detailPage .bookIntroduce .upIntroOuter {
+  width: 100%;
+  height: 50px;
+  background-color: #FCFCFB;
+}
+#wrap .detailPage .bookIntroduce .upIntroInner {
+  width: 1130px;
+  height: 100%;
+  margin: 60px auto;
+}
+#wrap .detailPage .bookIntroduce .upCategory {
+  width: 100%;
+  height: 50px;
+  background-color: #FCFCFB;
+  display: flex;
+  flex-flow: row;
+}
+#wrap .detailPage .bookIntroduce .upCategory div {
+  width: 250px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#wrap .detailPage .bookIntroduce .upCategory div span {
+  display: block;
+  font-size: 14px;
+}
+#wrap .detailPage .bookIntroduce .upCategory .cateBgOn {
+  background-color: white;
+  font-weight: bold;
+}
+#wrap .detailPage .bookIntroduce .downIntro {
+  width: 1130px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 60px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText {
+  width: 747px;
+  height: 100%;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText h6 {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #666;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText h4 {
+  padding-top: 15px;
+  height: 32px;
+  margin-bottom: 48px;
+  display: block;
+  border-top: 1px solid #eee;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText > b {
+  display: block;
+  line-height: 30px;
+  font-size: 14px;
+  margin-bottom: 48px;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText > p {
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 48px;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText .parentDiv {
+  position: relative;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText .parentDiv .mask {
+  width: 100%;
+  height: 450px;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText .parentDiv .maskOn {
+  z-index: -9;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText .parentDiv iframe {
+  margin-bottom: 48px;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText .parentDiv .slideBtn {
+  width: 60%;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  cursor: pointer;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText .parentDiv .slideBtn span {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText .slideToggle {
+  position: relative;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText .slideToggle .upSlide {
+  width: 60%;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  cursor: pointer;
+  box-shadow: 5px 5px 8px #eee;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText .slideToggle .upSlide span {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText .marginValue {
+  margin-bottom: 250px;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText .lastText {
+  text-aligN: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText .review {
+  text-aligN: center;
+  background-color: #464B6F;
+  width: 186px;
+  height: 40px;
+  border-radius: 50px;
+  margin: 30px auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+}
+#wrap .detailPage .bookIntroduce .downIntro .mainLeftText .review span {
+  display: block;
+  width: 186px;
+  height: 40px;
+  padding: 0px 40px;
+  color: white;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 13px;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText {
+  width: 289px;
+  height: 700px;
+  top: 70px;
+  right: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook {
+  width: 243px;
+  height: 441px;
+  background-color: white;
+  padding: 24px 22px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .UpBook {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 60%;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .UpBook > div:nth-of-type(1) {
+  width: 100%;
+  height: 107px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .UpBook > div:nth-of-type(1) > div:nth-of-type(1) {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eee;
+  width: 40%;
+  height: 85%;
+  background-image: url(//s3.ap-northeast-2.amazonaws.com/libro.image/Libro_V6/product/2022/0516/0100023391397-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .UpBook > div:nth-of-type(1) > div:nth-of-type(2) {
+  width: 55%;
+  height: 85%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .UpBook > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) p {
+  width: 100%;
+  height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .UpBook > div:nth-of-type(1) > div:nth-of-type(2) .numbButton {
+  width: 100%;
+  height: 30px;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .UpBook > div:nth-of-type(1) > div:nth-of-type(2) .numbButton a {
+  display: inline-block;
+  height: 100%;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .UpBook > div:nth-of-type(1) > div:nth-of-type(2) .numbButton input {
+  width: 20%;
+  height: 100%;
+  border: 1px solid #eee;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .UpBook > div:nth-of-type(2) {
+  width: 100%;
+  height: 113px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .UpBook > div:nth-of-type(2) div {
+  width: 100%;
+  height: 33px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .UpBook > div:nth-of-type(2) div span {
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .UpBook > div:nth-of-type(2) p {
+  color: #666;
+  font-size: 12px;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .UpBook div:nth-of-type(3) {
+  width: 100%;
+  height: 23px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .UpBook div:nth-of-type(3) p {
+  font-weight: bold;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .UpBook div:nth-of-type(3) h3 {
+  display: inline-block;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .downPrice {
+  width: 95%;
+  height: 30%;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .downPrice div {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .downPrice div:last-child {
+  box-shadow: 1px 1px 7px #eee;
+  background-color: #464B6F;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightUpBook .downPrice div:last-child span {
+  color: White;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightDownInfo {
+  width: 288px;
+  height: 184px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightDownInfo > div {
+  width: 100%;
+  height: 54px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightDownInfo > div .font {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightDownInfo > div .font i {
+  font-size: 23px;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightDownInfo > div .text {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+#wrap .detailPage .bookIntroduce .downIntro .rightStickyText .rightDownInfo > div .text span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+}
+#wrap .detailPage .bookIntroduce .reviewContainer {
+  width: 747px;
+  height: auto;
+}
+#wrap .detailPage .bookIntroduce .reviewContainer .reviewUpTitle {
+  width: 100%;
+  height: 30px;
+  padding-top: 27px;
+  padding-bottom: 31px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+#wrap .detailPage .bookIntroduce .reviewContainer .reviewPage {
+  width: 100%;
+  height: 411px;
+  padding-top: 44px;
+  padding-bottom: 39px;
+}
+#wrap .detailPage .bookIntroduce .reviewContainer .reviewPage .reviewUp {
+  width: 747px;
+  height: 327px;
+  padding-bottom: 39px;
+  border-bottom: 1px solid #eee;
+}
+#wrap .detailPage .bookIntroduce .reviewContainer .reviewPage .reviewUp p:first-child {
+  margin-bottom: 15px;
+}
+#wrap .detailPage .bookIntroduce .reviewContainer .reviewPage .reviewUp .customBox {
+  margin-bottom: 32px;
+}
+#wrap .detailPage .bookIntroduce .reviewContainer .reviewPage .reviewUp .customBox span {
+  color: #777;
+  font-size: 14px;
+}
+#wrap .detailPage .bookIntroduce .reviewContainer .reviewPage .reviewUp img {
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin-bottom: 32px;
+}
+#wrap .detailPage .bookIntroduce .reviewContainer .reviewPage .reviewUp p:nth-of-type(2) {
+  font-size: 12px;
+  height: 28px;
+  color: #777;
+}
+#wrap .detailPage .bookIntroduce .reviewContainer .reviewPage .reviewUp div:nth-of-type(2) {
+  margin-top: 25px;
+  height: 28px;
+  border: 1px solid #eee;
+  border-radius: 30px;
+  float: right;
+}
+#wrap .detailPage .bookIntroduce .reviewContainer .reviewPage .reviewUp div:nth-of-type(2) span {
+  font-size: 12px;
+  line-height: 28px;
+  padding: 0 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+#wrap .detailPage .bookIntroduce .reviewContainer .reviewPage .reviewDown {
+  margin-top: 44px;
+  width: 100%;
+  height: 22px;
+}
+
+#footer {
+  width: 100%;
+  height: 150px;
+  displaY: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+#footer .innerFoot {
+  margin: 0 auto;
+  width: 1130px;
+  height: 70px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+#footer .innerFoot .footLogo {
+  width: 130px;
+  height: 26px;
+  background-image: url(../img/inputLogo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#footer .innerFoot .footTxt {
+  width: 930px;
+  height: 100%;
+}
+#footer .innerFoot .footTxt ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+#footer .innerFoot .footTxt ul li {
+  width: 100%;
+  height: 17px;
+}
